@@ -3,33 +3,47 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Connexion Enseignant</title>
+    <title>Validation Code Admin</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <style>
         body {
             font-family: 'Segoe UI', Arial, sans-serif;
-            margin: 20px;
-            background-color: #f4f4f8; /* Gris clair */
+            margin: 0;
+            background-image: url('https://upf.ac.ma/photos/news/2_202372685512_upf20232607.jpg'); /* Image de fond */
+            background-size: cover; /* Ajuste l'image pour couvrir tout l'écran */
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: #333; /* Gris foncé */
+        }
+
+        .navbar {
+            background-color: #002147; /* Bleu UPF */
+        }
+
+        .navbar-brand {
+            color: #fff !important;
+        }
+
+        .container {
+            padding-top: 50px;
+            background-color: rgba(255, 255, 255, 0.8); /* Fond semi-transparent */
+            border-radius: 15px;
+            margin-bottom: 30px; /* Espace en dessous du conteneur */
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
         }
 
         h1 {
             text-align: center;
             color: #002147; /* Bleu UPF */
+            margin-bottom: 30px;
         }
 
         form {
-            max-width: 400px;
+            max-width: 300px;
             margin: 0 auto;
-            background-color: #fff; /* Blanc */
+            background-color: transparent; /* Fond transparent */
             padding: 20px;
             border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        label {
-            display: block;
-            margin-bottom: 10px;
-            color: #002147; /* Bleu UPF */
         }
 
         input {
@@ -53,12 +67,21 @@
         input[type="submit"]:hover {
             background-color: #ba0016;
         }
+
+        .btn-primary {
+            display: block;
+            width: 100%;
+            margin-top: 20px;
+        }
     </style>
 </head>
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #002147;">
+    <nav class="navbar navbar-expand-lg navbar-dark">
         <a class="navbar-brand" href="#">UPF Cahier Texte</a>
+                <div class="navbar-nav ml-auto">
+        
+        <a class="btn btn-primary" href="accueil.jsp">Accueil</a>
     </nav>
 
     <div class="container">
@@ -74,8 +97,7 @@
             <input type="submit" value="Se connecter">
 
             <!-- Bouton de redirection vers acceuil.jsp -->
-            <button onclick="window.location.href='accueil.jsp'" class="btn btn-primary">Accueil</button>
-            <!-- Fin du bouton de redirection -->
+\            <!-- Fin du bouton de redirection -->
         </form>
     </div>
 

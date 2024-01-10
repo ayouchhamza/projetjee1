@@ -32,7 +32,7 @@
 
         // Afficher le message en fonction du succès ou de l'échec de l'insertion pour les informations de l'année
         if (lignesAffecteesAnnee > 0) {
-            out.println("Informations de l'année enregistrées avec succès !");
+            out.println("Informatio	ns de l'année enregistrées avec succès !");
         } else {
             out.println("Aucune donnée de l'année enregistrée. Vérifiez les paramètres.");
         }
